@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="max-w-[2000px] mx-auto">
+    <header class="container mx-auto px-5 sm:px-0">
+      <nav class="mb-8 py-5 flex justify-between gap-3">
+        <div
+          class="flex justify-between items-center md:gap-16 lg:gap-14 xl:gap-28"
+        >
+          <div>
+            <a href="" class="text-2xl font-semibold">Rolling</a>
+          </div>
+          <label
+            for=""
+            class="hidden items-center px-5 py-2 bg-white border shadow-sm border-slate-300 rounded-2xl md:flex"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M21.7947 20.2046L17.9812 16.3911C19.387 14.5807 20.05 12.3027 19.8352 10.0207C19.6204 7.7387 18.5441 5.62435 16.8252 4.10807C15.1064 2.59179 12.8742 1.78758 10.5833 1.85917C8.29235 1.93076 6.1148 2.87276 4.49397 4.4934C2.87314 6.11404 1.93088 8.29148 1.85902 10.5824C1.78716 12.8734 2.5911 15.1056 4.10718 16.8246C5.62326 18.5436 7.73749 19.6203 10.0194 19.8353C12.3014 20.0503 14.5795 19.3876 16.39 17.982L20.2037 21.7956C20.3078 21.9014 20.4319 21.9856 20.5688 22.0433C20.7056 22.101 20.8526 22.131 21.0011 22.1316C21.1496 22.1322 21.2967 22.1034 21.434 22.0468C21.5714 21.9903 21.6961 21.9071 21.8011 21.8021C21.9061 21.6971 21.9893 21.5723 22.0459 21.435C22.1024 21.2977 22.1312 21.1505 22.1306 21.002C22.13 20.8535 22.1 20.7066 22.0424 20.5697C21.9847 20.4329 21.9005 20.3088 21.7946 20.2046H21.7947ZM4.12473 10.875C4.12473 9.53997 4.52061 8.23493 5.26231 7.1249C6.00401 6.01487 7.05821 5.1497 8.29161 4.63881C9.52501 4.12792 10.8822 3.99425 12.1916 4.2547C13.501 4.51515 14.7037 5.15802 15.6477 6.10203C16.5917 7.04603 17.2346 8.24877 17.495 9.55814C17.7555 10.8675 17.6218 12.2247 17.1109 13.4581C16.6 14.6915 15.7349 15.7457 14.6248 16.4874C13.5148 17.2291 12.2098 17.625 10.8747 17.625C9.08513 17.623 7.36941 16.9112 6.10398 15.6457C4.83854 14.3803 4.12674 12.6646 4.12473 10.875Z"
+                fill="#8E8E93"
+              />
+            </svg>
+            <input
+              type="text"
+              class="ml-3 bg-white placeholder-slate-400 outline-none focus:outline-none block md:w-[300px] lg:w-[330px] xl:w-[470px] sm:text-sm placeholder:text-base placeholder:font-medium"
+              placeholder="Search Rolling"
+            />
+          </label>
+        </div>
+        <div class="">
+          <ul
+            class="flex justify-between items-center gap-8 lg:gap-5 xl:gap-8 text-base font-medium"
+          >
+            <li
+              class="hidden lg:block transition-all hover:text-[#007AFF] hover:border-b"
+            >
+              <a href="">Explore</a>
+            </li>
+            <li
+              class="hidden lg:block transition-all hover:text-[#007AFF] hover:border-b"
+            >
+              <a href="">Activity</a>
+            </li>
+            <li
+              class="hidden lg:block transition-all hover:text-[#007AFF] hover:border-b"
+            >
+              <a href="">Feed</a>
+            </li>
+            <li
+              class="hidden lg:block transition-all hover:text-[#007AFF] hover:border-b"
+            >
+              <a href="">Bids</a>
+            </li>
+            <li
+              class="hidden md:flex shadow-lg rounded-[50%] items-center justify-center"
+            >
+              <a href="" class="w-10 h-10 flex items-center justify-center"
+                ><img src="./imgs/thunder.png" alt=""
+              /></a>
+            </li>
+            <li
+              class="bg-[#007bff12] transition-all hover:bg-[#007bff22] w-36 flex items-center justify-center rounded-[33px]"
+            >
+              <a href="" class="py-4 text-[#007AFF]">Connect Wallet</a>
+            </li>
+            <li class="md:hidden">
+              <a href="#">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="flex-wrap md:flex md:flex-nowrap justify-between gap-6 mb-24">
+        <div class="flex">
+          <img src="./imgs/hero.png" alt="" />
+        </div>
+        <div
+          class="w-full shadow-lg py-10 px-9 md:py-5 md:px-4 lg:py-10 lg:px-9 rounded-xl md:w-[300px] lg:w-[432px]"
+        >
+          <h2
+            class="mb-3 text-[28px] font-medium md:leading-tight lg:leading-normal"
+          >
+            The circle's pristine cleanliness
+          </h2>
+          <div class="mb-12 md:mb-5 lg:mb-12 flex gap-2">
+            <img src="./imgs/tung_tran.png" alt="" />
+            <span class="text-base font-normal">Tung Tran</span>
+          </div>
+          <div
+            class="flex md:flex-wrap lg:flex-nowrap justify-between mb-[72px] md:mb-5 lg:mb-[72px]"
+          >
+            <div
+              class="pr-5 border-r border-r-[#C7C7CC] md:border-r-0 lg:border-r lg:border-r-[#C7C7CC] sm:w-1/2 md:w-auto sm:border-none"
+            >
+              <p class="text-base font-normal">Current Bid</p>
+              <h2 class="text-xl sm:text-2xl font-medium">0.85 ETH</h2>
+              <p class="text-base text-[#8E8E93] font-medium">$2,169.42</p>
+            </div>
+            <div class="pl-3 md:pl-0 lg:pl-3 sm:w-1/2 md:w-auto">
+              <p class="text-base font-normal">Auction ends in</p>
+              <div class="flex flex-wrap sm:flex-nowrap gap-1 sm:gap-5">
+                <div class="">
+                  <h2 class="text-xl sm:text-2xl font-medium">3</h2>
+                  <p class="text-base text-[#8E8E93] font-medium">Hours</p>
+                </div>
+                <div class="">
+                  <h2 class="text-xl sm:text-2xl font-medium">16</h2>
+                  <p class="text-base text-[#8E8E93] font-medium">Minutes</p>
+                </div>
+                <div class="">
+                  <h2 class="text-xl sm:text-2xl font-medium">58</h2>
+                  <p class="text-base text-[#8E8E93] font-medium">Seconds</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="w-full mb-5 md:mb-3 lg:mb-5 py-5 md:py-3 lg:py-5 rounded-[45px] bg-[#007AFF] transition-all hover:bg-[#2069b8] text-white text-center"
+          >
+            Place a bid
+          </button>
+          <a
+            href=""
+            class="flex justify-center text-base font-medium text-[#007AFF]"
+            >View artwork</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container mx-auto mb-24 px-5 sm:px-0">
+        <div class="flex justify-between">
+          <h2 class="mb-9 text-3xl font-medium">Live auctions 🔥</h2>
+          <a href="">View all auctions</a>
+        </div>
+        <div class="flex-wrap md:flex lg:flex-nowrap justify-between gap-2">
+          <div
+            class="mb-5 relative md:w-[45%] rounded-2xl border border-[#E6E6E6]"
+          >
+            <div
+              class="absolute top-4 right-4 py-2 px-3 rounded-3xl text-[#2C2C2E] bg-[#FFFFFF99]"
+            >
+              01:27:46 left
+            </div>
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/live_card1.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user1.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mb-5 relative md:w-[45%] rounded-2xl border border-[#E6E6E6]"
+          >
+            <div
+              class="absolute top-4 right-4 py-2 px-3 rounded-3xl text-[#2C2C2E] bg-[#FFFFFF99]"
+            >
+              01:27:46 left
+            </div>
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/live_card2.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user2.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mb-5 relative md:w-[45%] rounded-2xl border border-[#E6E6E6]"
+          >
+            <div
+              class="absolute top-4 right-4 py-2 px-3 rounded-3xl text-[#2C2C2E] bg-[#FFFFFF99]"
+            >
+              01:27:46 left
+            </div>
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/live_card3.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">Pink Cloud 🌥</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user3.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mb-5 relative md:w-[45%] rounded-2xl border border-[#E6E6E6]"
+          >
+            <div
+              class="absolute top-4 right-4 py-2 px-3 rounded-3xl text-[#2C2C2E] bg-[#FFFFFF99]"
+            >
+              01:27:46 left
+            </div>
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/live_card4.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user4.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mx-auto mb-24 px-5 sm:px-0">
+        <div class="flex justify-between">
+          <h2 class="mb-9 text-3xl font-medium">Featured ✨</h2>
+          <a href="">View all</a>
+        </div>
+        <div
+          class="flex-wrap md:flex lg:flex-nowrap justify-between gap-2 mb-9"
+        >
+          <div class="mb-6 md:w-[45%] rounded-2xl border border-[E6E6E6]">
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/feature_card1.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user1.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6 md:w-[45%] rounded-2xl border border-[E6E6E6]">
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/feature_card2.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user2.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6 md:w-[45%] rounded-2xl border border-[E6E6E6]">
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/feature_card3.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user3.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-[45%] rounded-2xl border border-[E6E6E6]">
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/feature_card4.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user4.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex-wrap md:flex lg:flex-nowrap justify-between gap-2 mb-9"
+        >
+          <div class="mb-6 md:w-[45%] rounded-2xl border border-[E6E6E6]">
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/feature_card5.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user2.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6 md:w-[45%] rounded-2xl border border-[E6E6E6]">
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/feature_card6.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user3.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6 md:w-[45%] rounded-2xl border border-[E6E6E6]">
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/feature_card7.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user4.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-[45%] rounded-2xl border border-[E6E6E6]">
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/feature_card8.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user1.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex-wrap md:flex lg:flex-nowrap justify-between gap-2 mb-14"
+        >
+          <div class="mb-6 md:w-[45%] rounded-2xl border border-[E6E6E6]">
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/feature_card9.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user3.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6 md:w-[45%] rounded-2xl border border-[E6E6E6]">
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/feature_card10.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user4.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6 md:w-[45%] rounded-2xl border border-[E6E6E6]">
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/feature_card11.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user1.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-[45%] rounded-2xl border border-[E6E6E6]">
+            <img
+              class="mb-4 w-full md:flex"
+              src="./imgs/feature_card12.png"
+              alt=""
+            />
+            <div class="p-5">
+              <h3 class="mb-12 text-xl font-medium">3D Soft Curves</h3>
+              <div class="flex justify-between items-end">
+                <div class="flex gap-2 items-center">
+                  <img src="./imgs/live_card-user2.png" alt="" />
+                  <span class="text-base font-normal text-[#8E8E93]"
+                    >Esther Howard</span
+                  >
+                </div>
+                <div class="">
+                  <p class="text-base font-normal text-[#8E8E93]">
+                    Current Bid
+                  </p>
+                  <h2 class="text-xl font-medium">0.85 ETH</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button
+            class="px-16 py-4 text-base font-medium rounded-[48px] border border-[#AEAEB2] transition-all hover:bg-[#AEAEB2] hover:text-white"
+          >
+            Load More
+          </button>
+        </div>
+      </section>
+
+      <section class="container mx-auto mb-24 px-5 sm:px-0">
+        <div class="flex justify-between">
+          <h2 class="mb-9 text-3xl font-medium">Top Creators</h2>
+          <a href="">View all</a>
+        </div>
+        <div
+          class="flex-wrap md:flex lg:flex-nowrap justify-between gap-2 mb-9"
+        >
+          <div class="mb-6 md:w-[45%] border border-[#E5E5E5] rounded-t-3xl">
+            <img class="w-full md:flex" src="./imgs/creator1.png" alt="" />
+            <div class="p-4 flex items-start justify-between gap-4">
+              <img src="./imgs/creator_user1.png" alt="" />
+              <div class="">
+                <div class="flex items-center gap-2">
+                  <h3 class="text-lg font-normal">Tung Tran</h3>
+                  <img src="./imgs/check.png" alt="" />
+                </div>
+
+                <p class="mb-[72px]">
+                  Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                  #bitcoin since 2012.
+                </p>
+                <div class="flex justify-between items-center">
+                  <h3 class="text-base font-normal">3K Followers</h3>
+                  <button
+                    class="px-4 py-2 bg-[#007AFF] rounded-[38px] text-white transition-all hover:bg-[#2069b8]"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6 md:w-[45%] border border-[#E5E5E5] rounded-t-3xl">
+            <img class="w-full md:flex" src="./imgs/creator2.png" alt="" />
+            <div class="p-4 flex items-start justify-between gap-4">
+              <img src="./imgs/creator_user2.png" alt="" />
+              <div class="">
+                <div class="flex items-center gap-2">
+                  <h3 class="text-lg font-normal">Tung Tran</h3>
+                  <img src="./imgs/check.png" alt="" />
+                </div>
+
+                <p class="mb-[72px]">
+                  Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                  #bitcoin since 2012.
+                </p>
+                <div class="flex justify-between items-center">
+                  <h3 class="text-base font-normal">3K Followers</h3>
+                  <button
+                    class="px-4 py-2 bg-[#007AFF] rounded-[38px] text-white transition-all hover:bg-[#2069b8]"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6 md:w-[45%] border border-[#E5E5E5] rounded-t-3xl">
+            <img class="w-full md:flex" src="./imgs/creator3.png" alt="" />
+            <div class="p-4 flex items-start justify-between gap-4">
+              <img src="./imgs/creator_user3.png" alt="" />
+              <div class="">
+                <div class="flex items-center gap-2">
+                  <h3 class="text-lg font-normal">Tung Tran</h3>
+                  <img src="./imgs/check.png" alt="" />
+                </div>
+
+                <p class="mb-[72px]">
+                  Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                  #bitcoin since 2012.
+                </p>
+                <div class="flex justify-between items-center">
+                  <h3 class="text-base font-normal">3K Followers</h3>
+                  <button
+                    class="px-4 py-2 bg-[#007AFF] rounded-[38px] text-white transition-all hover:bg-[#2069b8]"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6 md:w-[45%] border border-[#E5E5E5] rounded-t-3xl">
+            <img class="w-full md:flex" src="./imgs/creator4.png" alt="" />
+            <div class="p-4 flex items-start justify-between gap-4">
+              <img src="./imgs/creator_user4.png" alt="" />
+              <div class="">
+                <div class="flex items-center gap-2">
+                  <h3 class="text-lg font-normal">Tung Tran</h3>
+                  <img src="./imgs/check.png" alt="" />
+                </div>
+
+                <p class="mb-[72px]">
+                  Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                  #bitcoin since 2012.
+                </p>
+                <div class="flex justify-between items-center">
+                  <h3 class="text-base font-normal">3K Followers</h3>
+                  <button
+                    class="px-4 py-2 bg-[#007AFF] rounded-[38px] text-white transition-all hover:bg-[#2069b8]"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex-wrap md:flex lg:flex-nowrap justify-between gap-2 mb-14"
+        >
+          <div class="mb-6 md:w-[45%] border border-[#E5E5E5] rounded-t-3xl">
+            <img class="w-full md:flex" src="./imgs/creator3.png" alt="" />
+            <div class="p-4 flex items-start justify-between gap-4">
+              <img src="./imgs/creator_user5.png" alt="" />
+              <div class="">
+                <div class="flex items-center gap-2">
+                  <h3 class="text-lg font-normal">Tung Tran</h3>
+                  <img src="./imgs/check.png" alt="" />
+                </div>
+
+                <p class="mb-[72px]">
+                  Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                  #bitcoin since 2012.
+                </p>
+                <div class="flex justify-between items-center">
+                  <h3 class="text-base font-normal">3K Followers</h3>
+                  <button
+                    class="px-4 py-2 bg-[#007AFF] rounded-[38px] text-white transition-all hover:bg-[#2069b8]"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6 md:w-[45%] border border-[#E5E5E5] rounded-t-3xl">
+            <img class="w-full md:flex" src="./imgs/creator4.png" alt="" />
+            <div class="p-4 flex items-start justify-between gap-4">
+              <img src="./imgs/creator_user6.png" alt="" />
+              <div class="">
+                <div class="flex items-center gap-2">
+                  <h3 class="text-lg font-normal">Tung Tran</h3>
+                  <img src="./imgs/check.png" alt="" />
+                </div>
+
+                <p class="mb-[72px]">
+                  Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                  #bitcoin since 2012.
+                </p>
+                <div class="flex justify-between items-center">
+                  <h3 class="text-base font-normal">3K Followers</h3>
+                  <button
+                    class="px-4 py-2 bg-[#007AFF] rounded-[38px] text-white transition-all hover:bg-[#2069b8]"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6 md:w-[45%] border border-[#E5E5E5] rounded-t-3xl">
+            <img class="w-full md:flex" src="./imgs/creator1.png" alt="" />
+            <div class="p-4 flex items-start justify-between gap-4">
+              <img src="./imgs/creator_user7.png" alt="" />
+              <div class="">
+                <div class="flex items-center gap-2">
+                  <h3 class="text-lg font-normal">Tung Tran</h3>
+                  <img src="./imgs/check.png" alt="" />
+                </div>
+
+                <p class="mb-[72px]">
+                  Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                  #bitcoin since 2012.
+                </p>
+                <div class="flex justify-between items-center">
+                  <h3 class="text-base font-normal">3K Followers</h3>
+                  <button
+                    class="px-4 py-2 bg-[#007AFF] rounded-[38px] text-white transition-all hover:bg-[#2069b8]"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-[45%] border border-[#E5E5E5] rounded-t-3xl">
+            <img class="w-full md:flex" src="./imgs/creator2.png" alt="" />
+            <div class="p-4 flex items-start justify-between gap-4">
+              <img src="./imgs/creator_user8.png" alt="" />
+              <div class="">
+                <div class="flex items-center gap-2">
+                  <h3 class="text-lg font-normal">Tung Tran</h3>
+                  <img src="./imgs/check.png" alt="" />
+                </div>
+
+                <p class="mb-[72px]">
+                  Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                  #bitcoin since 2012.
+                </p>
+                <div class="flex justify-between items-center">
+                  <h3 class="text-base font-normal">3K Followers</h3>
+                  <button
+                    class="px-4 py-2 bg-[#007AFF] rounded-[38px] text-white transition-all hover:bg-[#2069b8]"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button
+            class="px-16 py-4 text-base font-medium rounded-[48px] border border-[#AEAEB2] transition-all hover:bg-[#AEAEB2] hover:text-white"
+          >
+            View All Creators
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black">
+      <div class="container mx-auto pt-10 text-white px-5 sm:px-0">
+        <div
+          class="mb-[72px] flex flex-wrap justify-start md:justify-center md:flex md:flex-nowrap gap-5 md:gap-20 lg:gap-44"
+        >
+          <div class="w-full md:w-auto">
+            <h3 class="mb-6 text-xl font-medium">
+              Get the latest Rolling updates
+            </h3>
+            <label class="flex" for="">
+              <input
+                class="w-[300px] pl-6 py-2 rounded-[38px] bg-[#EBEBF599] placeholder:text-[#EBEBF599] outline-none"
+                type="text"
+                placeholder="Enter your email"
+              />
+              <button
+                class="-ml-9 px-4 py-2 bg-[#007AFF] rounded-[38px] text-white transition-all hover:bg-[#2069b8]"
+              >
+                Subscribe
+              </button>
+            </label>
+          </div>
+          <ul class="sm:mr-28 md:mr-auto lg:mr-9">
+            <li class="mb-6 text-xl font-medium">Rolling</li>
+            <li
+              class="mb-4 text-xl font-normal text-[#EBEBF599] transition-all hover:text-[#EBEBF5]"
+            >
+              <a href="#">Explore</a>
+            </li>
+            <li
+              class="mb-4 text-xl font-normal text-[#EBEBF599] transition-all hover:text-[#EBEBF5]"
+            >
+              <a href="#">Blog</a>
+            </li>
+            <li
+              class="mb-4 text-xl font-normal text-[#EBEBF599] transition-all hover:text-[#EBEBF5]"
+            >
+              <a href="#">About us</a>
+            </li>
+            <li
+              class="text-xl font-normal text-[#EBEBF599] transition-all hover:text-[#EBEBF5]"
+            >
+              <a href="#">Become a partner</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="mb-6 text-xl font-medium">Community</li>
+            <li
+              class="mb-4 text-xl font-normal text-[#EBEBF599] transition-all hover:text-[#EBEBF5]"
+            >
+              <a href="#">Community Guidelines</a>
+            </li>
+            <li
+              class="mb-4 text-xl font-normal text-[#EBEBF599] transition-all hover:text-[#EBEBF5]"
+            >
+              <a href="#">Roll Token</a>
+            </li>
+            <li
+              class="text-xl font-normal text-[#EBEBF599] transition-all hover:text-[#EBEBF5]"
+            >
+              <a href="#">Discussion</a>
+            </li>
+          </ul>
+        </div>
+        <hr />
+      </div>
+      <div
+        class="container mx-auto py-[34px] flex justify-center md:justify-between items-center px-5 sm:px-0"
+      >
+        <div class="text-white flex gap-16">
+          <div>
+            <a href="" class="text-2xl font-semibold">Rolling</a>
+          </div>
+          <ul class="flex gap-6 items-center">
+            <li
+              class="text-base font-normal text-[#EBEBF599] transition-all hover:text-[#EBEBF5]"
+            >
+              <a href="#">Terms of Service</a>
+            </li>
+            <li
+              class="text-base font-normal text-[#EBEBF599] transition-all hover:text-[#EBEBF5]"
+            >
+              <a href="#">Privacy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hidden md:flex items-center gap-6">
+          <a class="transition-all hover:-translate-y-1" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M12 7.5C11.11 7.5 10.24 7.76392 9.49993 8.25839C8.75991 8.75285 8.18314 9.45566 7.84254 10.2779C7.50195 11.1002 7.41283 12.005 7.58647 12.8779C7.7601 13.7508 8.18868 14.5526 8.81802 15.182C9.44736 15.8113 10.2492 16.2399 11.1221 16.4135C11.995 16.5872 12.8998 16.4981 13.7221 16.1575C14.5443 15.8169 15.2471 15.2401 15.7416 14.5001C16.2361 13.76 16.5 12.89 16.5 12C16.4987 10.8069 16.0241 9.66312 15.1805 8.8195C14.3369 7.97588 13.1931 7.50134 12 7.5ZM12 15C11.4067 15 10.8266 14.8241 10.3333 14.4944C9.83994 14.1648 9.45542 13.6962 9.22836 13.1481C9.0013 12.5999 8.94189 11.9967 9.05764 11.4147C9.1734 10.8328 9.45912 10.2982 9.87868 9.87868C10.2982 9.45912 10.8328 9.1734 11.4147 9.05764C11.9967 8.94189 12.5999 9.0013 13.1481 9.22836C13.6962 9.45542 14.1648 9.83994 14.4944 10.3333C14.8241 10.8266 15 11.4067 15 12C14.9991 12.7954 14.6827 13.5579 14.1203 14.1203C13.5579 14.6827 12.7954 14.9991 12 15ZM16.125 2.625H7.875C6.4831 2.62659 5.14867 3.18022 4.16444 4.16444C3.18022 5.14867 2.62659 6.4831 2.625 7.875V16.125C2.62659 17.5169 3.18022 18.8513 4.16444 19.8356C5.14867 20.8198 6.4831 21.3734 7.875 21.375H16.125C17.5169 21.3734 18.8513 20.8198 19.8356 19.8356C20.8198 18.8513 21.3734 17.5169 21.375 16.125V7.875C21.3734 6.4831 20.8198 5.14867 19.8356 4.16444C18.8513 3.18022 17.5169 2.62659 16.125 2.625ZM19.875 16.125C19.8739 17.1192 19.4784 18.0724 18.7754 18.7754C18.0724 19.4784 17.1192 19.8739 16.125 19.875H7.875C6.88078 19.8739 5.9276 19.4784 5.22458 18.7754C4.52156 18.0724 4.12612 17.1192 4.125 16.125V7.875C4.12612 6.88078 4.52156 5.9276 5.22458 5.22458C5.9276 4.52156 6.88078 4.12612 7.875 4.125H16.125C17.1192 4.12612 18.0724 4.52156 18.7754 5.22458C19.4784 5.9276 19.8739 6.88078 19.875 7.875V16.125ZM18 7.125C18 7.3475 17.934 7.56501 17.8104 7.75002C17.6868 7.93502 17.5111 8.07922 17.3055 8.16436C17.1 8.24951 16.8738 8.27179 16.6555 8.22838C16.4373 8.18498 16.2368 8.07783 16.0795 7.9205C15.9222 7.76316 15.815 7.56271 15.7716 7.34448C15.7282 7.12625 15.7505 6.90005 15.8356 6.69448C15.9208 6.48891 16.065 6.31321 16.25 6.1896C16.435 6.06598 16.6525 6 16.875 6C17.1734 6 17.4595 6.11853 17.6705 6.3295C17.8815 6.54048 18 6.82663 18 7.125Z"
+                fill="#EBEBF5"
+                fill-opacity="0.6"
+              />
+            </svg>
+          </a>
+          <a class="transition-all hover:-translate-y-1" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M23.0303 7.28039L20.2457 10.065C20.1709 12.8172 19.1204 15.5013 17.3375 17.472C15.2491 19.7801 12.3661 21 9.00001 21C5.72701 21 4.03989 19.3506 3.96967 19.2804C3.87372 19.1845 3.8056 19.0643 3.77256 18.9327C3.73951 18.8011 3.74279 18.663 3.78203 18.5331C3.82128 18.4032 3.89502 18.2864 3.9954 18.1951C4.09579 18.1039 4.21906 18.0415 4.35208 18.0148C5.15251 17.8526 7.13935 17.2212 7.98489 16.083C7.07836 15.5603 6.27339 14.8786 5.60851 14.0705C3.25614 11.214 3.30601 7.62426 3.76211 5.11589C3.78784 4.97429 3.85378 4.84308 3.95205 4.73792C4.05031 4.63277 4.17676 4.55811 4.3163 4.52285C4.45584 4.4876 4.60257 4.49324 4.73899 4.5391C4.87541 4.58495 4.99576 4.6691 5.08567 4.78148C5.11145 4.81354 7.57642 7.83351 11.25 8.82023V8.25023C11.2579 7.04932 11.7424 5.90071 12.5969 5.05689C13.4515 4.21308 14.6061 3.74312 15.807 3.75033C16.5871 3.76111 17.3511 3.97407 18.0243 4.36838C18.6975 4.7627 19.257 5.32489 19.6479 6.00004H22.5C22.6483 6.00004 22.7934 6.04402 22.9167 6.12643C23.04 6.20884 23.1362 6.32598 23.1929 6.46303C23.2497 6.60008 23.2646 6.75088 23.2356 6.89637C23.2067 7.04186 23.1352 7.1755 23.0303 7.28039Z"
+                fill="#EBEBF5"
+                fill-opacity="0.6"
+              />
+            </svg>
+          </a>
+          <a class="transition-all hover:-translate-y-1" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M21.6803 2.97513C21.4736 2.79669 21.222 2.67819 20.9528 2.63246C20.6837 2.58674 20.4071 2.61553 20.1531 2.71573L2.85087 9.51307C2.54934 9.63158 2.29428 9.84453 2.12385 10.1201C1.95342 10.3956 1.87678 10.7189 1.9054 11.0416C1.93402 11.3644 2.06636 11.6691 2.28262 11.9104C2.49888 12.1516 2.78744 12.3164 3.10512 12.3799L7.50002 13.2591V18.7485C7.49976 19.0453 7.58758 19.3354 7.75235 19.5823C7.91712 19.8291 8.15144 20.0215 8.42562 20.1351C8.69981 20.2487 9.00154 20.2783 9.29259 20.2203C9.58364 20.1623 9.85094 20.0192 10.0606 19.8092L12.4929 17.377L16.1844 20.6254C16.4561 20.8668 16.8069 21.0003 17.1703 21.0008C17.3283 21.0006 17.4853 20.9758 17.6356 20.927C17.8835 20.8484 18.1065 20.7061 18.2823 20.5144C18.458 20.3227 18.5805 20.0883 18.6373 19.8345L22.1636 4.4471C22.2251 4.18101 22.2125 3.90319 22.1273 3.64374C22.0421 3.38428 21.8875 3.1531 21.6803 2.97523V2.97513ZM17.1752 19.4993L9.45096 12.7019L20.5739 4.66873L17.1752 19.4993Z"
+                fill="#EBEBF5"
+                fill-opacity="0.6"
+              />
+            </svg>
+          </a>
+          <a class="transition-all hover:-translate-y-1" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M21.9684 6.54354C21.8795 6.1986 21.7098 5.87975 21.4734 5.6133C21.237 5.34686 20.9406 5.14044 20.6087 5.0111C17.3959 3.77651 12.2793 3.78682 12 3.78832C11.7208 3.78607 6.60422 3.77651 3.39141 5.0111C3.05949 5.14042 2.76309 5.34681 2.52665 5.61325C2.29021 5.87968 2.12051 6.19852 2.03156 6.54345C1.78903 7.47448 1.5 9.17689 1.5 12.0001C1.5 14.8233 1.78903 16.5256 2.03156 17.4566C2.12049 17.8015 2.29017 18.1204 2.52659 18.3868C2.76301 18.6533 3.05941 18.8597 3.39131 18.989C6.46688 20.1709 11.2871 20.212 11.9382 20.212H12.0618C12.7133 20.212 17.5332 20.1708 20.6086 18.989C20.9405 18.8597 21.2369 18.6533 21.4734 18.3869C21.7098 18.1205 21.8795 17.8016 21.9684 17.4567C22.211 16.5257 22.5 14.8233 22.5 12.0001C22.5 9.17689 22.211 7.47457 21.9684 6.54354ZM15.208 12.3121L10.708 15.3121C10.6516 15.3497 10.5859 15.3713 10.5181 15.3746C10.4503 15.3779 10.3829 15.3627 10.3231 15.3307C10.2632 15.2987 10.2132 15.251 10.1783 15.1928C10.1434 15.1346 10.125 15.0679 10.125 15.0001V9.00007C10.125 8.9322 10.1434 8.86559 10.1783 8.80737C10.2132 8.74914 10.2632 8.70147 10.3231 8.66944C10.3829 8.63742 10.4503 8.62224 10.5181 8.62552C10.5859 8.6288 10.6516 8.65042 10.708 8.68807L15.208 11.6881C15.2594 11.7223 15.3015 11.7687 15.3306 11.8231C15.3598 11.8776 15.375 11.9383 15.375 12.0001C15.375 12.0618 15.3598 12.1226 15.3306 12.177C15.3015 12.2314 15.2594 12.2778 15.208 12.3121Z"
+                fill="#EBEBF5"
+                fill-opacity="0.6"
+              />
+            </svg>
+          </a>
+          <a class="transition-all hover:-translate-y-1" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M12.75 12C12.75 15.5152 10.0584 18.375 6.75 18.375C3.44156 18.375 0.75 15.5152 0.75 12C0.75 8.48484 3.44156 5.625 6.75 5.625C10.0584 5.625 12.75 8.48484 12.75 12ZM22.5 6C22.3011 6 22.1103 6.07902 21.9697 6.21967C21.829 6.36032 21.75 6.55109 21.75 6.75V17.25C21.75 17.4489 21.829 17.6397 21.9697 17.7803C22.1103 17.921 22.3011 18 22.5 18C22.6989 18 22.8897 17.921 23.0303 17.7803C23.171 17.6397 23.25 17.4489 23.25 17.25V6.75C23.25 6.55109 23.171 6.36032 23.0303 6.21967C22.8897 6.07902 22.6989 6 22.5 6ZM17.25 6C16.7172 6 15.7125 6.25875 14.9696 7.99228C14.5056 9.07509 14.25 10.4984 14.25 12C14.25 13.5016 14.5056 14.925 14.9696 16.0077C15.7126 17.7412 16.7172 18 17.25 18C17.7828 18 18.7875 17.7412 19.5304 16.0077C19.9944 14.9249 20.25 13.5016 20.25 12C20.25 10.4984 19.9944 9.075 19.5304 7.99228C18.7874 6.25884 17.7828 6 17.25 6Z"
+                fill="#EBEBF5"
+                fill-opacity="0.6"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
